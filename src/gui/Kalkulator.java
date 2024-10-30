@@ -519,8 +519,6 @@ public class Kalkulator extends javax.swing.JFrame {
             case "%":
                 res = last_number % recently;
                 break;
-            case "E":
-                res = last_number * Math.pow(10,recently);
         }
         Input.setText(String.valueOf(res));
         text = String.valueOf(res);
@@ -533,8 +531,7 @@ public class Kalkulator extends javax.swing.JFrame {
 
     private void BtnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEActionPerformed
         // TODO add your handling code here:
-        actionBtn("E");
-        comaClick = true;
+        System.exit(0);
     }//GEN-LAST:event_BtnEActionPerformed
 
     private void BtnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPlusActionPerformed
